@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer Dobrynin</title>
+</head>
+<style>
+    .timer {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .timer > div{
+        margin-left: 5px;
+        font-size: 50px;
+        font-weight: 700;
+    }
+    .timer-item {
+        display: flex;
+    }
+    .timer-item  > span {
+        margin-right: 10px;
+    }
+</style>
+<body>
+    <div class="timer">
+        <div class="timer-item">
+            <span>Дней</span>
+            <div id="days">00</div>
+        </div>
+        <div class="timer-item">
+            <span>Часов</span>
+            <div id="hours">00</div>
+        </div>
+        <div class="timer-item">
+            <span>Минут</span>
+            <div id="minutes">00</div>
+        </div>
+        <div class="timer-item">
+            <span>Секунд</span>
+            <div id="seconds">00</div>
+        </div>
+    
+    </div>
+    <script src='main.js'></script>
+</body>
+</html>
